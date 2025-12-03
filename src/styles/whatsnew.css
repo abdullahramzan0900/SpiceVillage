@@ -1,0 +1,35 @@
+.whatsnew {
+  margin-top: 6px;
+}
+
+.whatsnew-header {
+  margin-bottom: 12px;
+}
+
+.whatsnew-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+}
+
+.whats-card {
+  padding: 14px 16px 16px;
+}
+
+.whats-card h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  color: var(--accent-strong);
+}
+
+.whats-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+@media (min-width: 800px) {
+  .whatsnew-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

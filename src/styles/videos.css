@@ -1,0 +1,34 @@
+.sv-videos-section {
+    background: #F5F2EA;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .sv-videos-sub {
+    color: #8a7f6e;
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+  
+  .sv-videos-grid {
+    max-width: 1200px;
+    width: 92%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+  }
+  
+  .sv-videos-grid video {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+    background: #000;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  
+  .sv-videos-grid video:hover {
+    transform: scale(1.02);
+  }
+  

@@ -1,0 +1,49 @@
+.sv-header {
+  background: #0E5A5E; /* Deep Teal */
+  border-bottom: 2px solid #C7A77455;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 12px 0;
+}
+
+.sv-header-inner {
+  max-width: 1300px;
+  margin: auto;
+  width: 92%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sv-logo {
+  height: 55px;
+  filter: drop-shadow(0px 1px 2px rgba(0,0,0,0.2));
+}
+
+.sv-nav {
+  display: flex;
+  gap: 28px;
+}
+
+.sv-nav a {
+  color: #C7A774;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.25s ease-in-out;
+  padding-bottom: 4px;
+}
+
+.sv-nav a:hover,
+.sv-nav a.active {
+  color: #fff;
+  border-bottom: 2px solid #C7A774;
+}
+
+@media(max-width: 768px) {
+  .sv-nav {
+    gap: 16px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,208 @@
+.sv-dish-page {
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  padding: 16px;
+}
+
+.sv-back-link {
+  display: inline-block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: var(--sv-primary);
+  font-size: 14px;
+}
+
+.sv-back-link:hover {
+  text-decoration: underline;
+}
+
+/* Layout */
+.sv-dish-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 24px;
+}
+
+/* Hero */
+.sv-dish-hero-wrap {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.28);
+}
+
+.sv-dish-hero {
+  width: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.02);
+  transition: transform 0.35s ease;
+}
+
+.sv-dish-hero-wrap:hover .sv-dish-hero {
+  transform: scale(1.07);
+}
+
+/* Gradient overlay for badges */
+.sv-dish-badges {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.sv-badge {
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.sv-badge-veg {
+  background: rgba(47, 143, 78, 0.9);
+}
+
+.sv-badge-nonveg {
+  background: rgba(181, 61, 43, 0.9);
+}
+
+.sv-badge-spicy {
+  background: rgba(211, 71, 36, 0.9);
+}
+
+/* Info panel */
+.sv-dish-info {
+  background: var(--sv-card);
+  border-radius: 22px;
+  padding: 16px 18px 18px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.sv-dish-header h1 {
+  margin: 0 0 4px;
+  font-size: 24px;
+}
+
+.sv-dish-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+  font-size: 13px;
+  color: var(--sv-muted);
+}
+
+.sv-dish-price {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--sv-gold);
+}
+
+.sv-dish-desc {
+  margin: 10px 0;
+  font-size: 14px;
+  color: var(--sv-muted);
+}
+
+/* Tags */
+.sv-tag-row {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.sv-tag-chip {
+  border-radius: 999px;
+  padding: 4px 8px;
+  font-size: 11px;
+  background: rgba(14, 90, 94, 0.08);
+  color: var(--sv-text);
+}
+
+/* Boxes */
+.sv-box {
+  border-radius: 16px;
+  background: rgba(14, 90, 94, 0.03);
+  padding: 10px 12px;
+  margin-top: 10px;
+}
+
+.sv-box h2 {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.sv-box-allergens {
+  border-left: 4px solid #c9593a;
+}
+
+.sv-allergen-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.sv-allergen-chip {
+  border-radius: 999px;
+  padding: 3px 8px;
+  font-size: 11px;
+  background: #ffe8e0;
+  color: #8b4b3c;
+}
+
+.sv-allergen-note {
+  margin: 6px 0 0;
+  font-size: 11px;
+  color: #8b4b3c;
+}
+
+/* Pairings */
+.sv-pairings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+.sv-pairing-col h3 {
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+
+.sv-pairing-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sv-pair-card {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.sv-pair-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.sv-pair-card p {
+  margin: 0;
+  font-size: 13px;
+}
+
+/* Responsiveness */
+@media (max-width: 800px) {
+  .sv-dish-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sv-dish-hero {
+    max-height: 280px;
+  }
+}

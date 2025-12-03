@@ -1,0 +1,40 @@
+.sv-story {
+    background: #F5F2EA;
+    padding: 100px 0;
+  }
+  
+  .sv-story-inner {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    width: 92%;
+  }
+  
+  .sv-story-text h2 {
+    font-size: 42px;
+    color: #0E5A5E;
+    margin-bottom: 16px;
+  }
+  
+  .sv-story-text p {
+    color: #3b3b3b;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  
+  .sv-story-image img {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+  }
+  
+  @media(max-width: 900px) {
+    .sv-story-inner {
+      grid-template-columns: 1fr;
+    }
+  }
+  

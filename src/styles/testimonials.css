@@ -1,0 +1,40 @@
+.sv-testimonials {
+    background: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .sv-reviews-grid {
+    width: 92%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+  }
+  
+  .sv-review-card {
+    padding: 26px;
+    background: #F5F2EA;
+    border-radius: 14px;
+    border-left: 4px solid #C7A774;
+    transition: 0.3s;
+  }
+  
+  .sv-review-card:hover {
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  .sv-review-card p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .sv-review-card h4 {
+    color: #0E5A5E;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
